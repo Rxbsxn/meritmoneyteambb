@@ -1,1 +1,8 @@
-{{outlet}}
+<h2 id="newBook">New Coworker</h2>
+<form>
+  <div class="form-group">
+    <label for="nameInput">Name</label>
+    {{input value=name placeholder="name" class="form-control" id="nameInput"}}
+  </div>
+  <button {{action "addPerson"}} class="btn btn-default">Add</button>
+</form>
