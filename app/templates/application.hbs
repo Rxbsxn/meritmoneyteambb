@@ -1,3 +1,6 @@
-<h2 id="title">Welcome to Ember</h2>
-
+<div class="jumbotron text-center">
+  <h2 id="title">{{#link-to 'application'}}Company name{{/link-to}}</h2>
+  {{#link-to 'people'}}<button class="btn btn-primary">All people</button>{{/link-to}}
+  {{#link-to 'people.add'}}<button class="btn btn-primary">add new people</button>{{/link-to}}
+</div>
 {{outlet}}
