@@ -1,0 +1,12 @@
+<div class="col-md-6 col-md-offset-3">
+  {{outlet}}
+  <section>
+    <h2>Book List</h2>
+    {{#each model as |person|}}
+    <p>
+      <span><strong>{{person.name}}/span>
+      <button class="btn btn-success" {{action "givekudo" person}}>Give kudo</button>
+    </p>
+    {{/each}}
+  </section>
+</div>
