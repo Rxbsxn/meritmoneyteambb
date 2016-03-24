@@ -4,8 +4,11 @@
     <h2>List</h2>
     {{#each model as |person|}}
     <p>
-      <span><strong>{{person.name}}</strong></span>
+      <span><h1>{{person.name}}</h1> <h2>Kudos:{{kudo}}</h2></span>
       <button class="btn btn-success" {{action "giveKudo" person}}>Give kudo</button>
+
+      <button class="btn btn-danger" {{action "delete" person}}>Delete </button>
+
     </p>
     {{/each}}
   </section>
