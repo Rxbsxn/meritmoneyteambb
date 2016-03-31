@@ -2,12 +2,12 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
 
-  kudo: 0,
+  kudo: 20,
 
 
   actions: {
    giveKudo(person) {
-     this.incrementProperty('kudo');
+     this.decrementProperty('kudo');
      person.save();
    },
    delete(person) {

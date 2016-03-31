@@ -4,5 +4,10 @@
     <label for="nameInput">Name</label>
     {{input value=name placeholder="name" class="form-control" id="nameInput"}}
   </div>
+
+  <div class="form-group">
+    <label for="imageUrl">image</label>
+    {{input value=imageUrl placeholder="img" class="form-control" id="imageUrl"}}
+  </div>
   <button {{action "addPerson"}} class="btn btn-default">Add</button>
 </form>

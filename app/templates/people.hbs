@@ -4,6 +4,7 @@
     <h2>List</h2>
     {{#each model as |person|}}
     <p>
+      <img src={{person.imageUrl}} alt="" class="img-circle">
       <span><h1>{{person.name}}</h1> <h2>Kudos:{{kudo}}</h2></span>
       <button class="btn btn-success" {{action "giveKudo" person}}>Give kudo</button>
 

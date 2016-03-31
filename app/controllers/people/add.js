@@ -4,6 +4,8 @@ export default Ember.Controller.extend({
     addPerson: function() {
       var newPerson = this.store.createRecord('user', {
         name: this.get('name'),
+        imageUrl: this.get('imageUrl'),
+
       });
       newPerson.save();
       this.transitionTo('people');
